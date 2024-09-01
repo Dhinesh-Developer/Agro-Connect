@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:lightseagreen; /* Light background color */
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    background-color: #ffffff; /* White background for navbar */
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #4CAF50; /* Green color for brand */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark text color for links */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #4CAF50; /* Highlight active link in green */
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* White text color */
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+   
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* Card Animations */
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #4CAF50; /* Green button */
+    border-color: #4CAF50;
+}
+
+.btn-success:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff; /* White footer background */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd; /* Light border for separation */
+    margin-top: 20px;
+}
+
+/* Profile Page */
+.profile-form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Search Page */
+.search-results {
+    background-image: url('images/search-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-grid .card {
+    margin: 10px;
+    width: calc(20% - 20px); /* Adjust width to fit more products */
+}
+
+/* Cart Page */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Payment Page */
+.payment-form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Additional Styles for Specific Pages */
+.product-page {
+    background-color: #f1f1f1; /* Light gray background for product page */
+    padding: 40px 0;
+}
+
+.product-page .card {
+    margin: 10px;
+    width: calc(20% - 20px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid .card {
+        width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid .card {
+        width: 100%; /* Full-width on extra-small screens */
+    }
+}
